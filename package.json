@@ -1,8 +1,8 @@
 {
-  "name": "express",
+  "name": "express10",
   "version": "1.0.0",
   "description": "",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
     "test": "nodemon index.js",
     "start": "node index.js"

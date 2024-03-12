@@ -11,12 +11,12 @@
 </head>
 <body>
     <div class="container">
-      <h1>我的網站</h1>
-      <div class="btn btn-primary">
-        TEST
-        <i class="fa-solid fa-house"></i>
+        <h1>我的網站</h1>
+        <div class="btn btn-primary">
+            TEST
+            <i class="fa-solid fa-house"></i>
+        </div>
       </div>
-    </div>
     <!-- Modal -->
     <div
       class="modal fade"
@@ -50,14 +50,15 @@
         </div>
       </div>
     </div>
-  
-  <script>
-    const myModal = new bootstrap.Modal("#exampleModal", {
-        keyboard: false
-    });
-    $(".btn-primary").on("click", () => {
-        myModal.show();
-    });
-  </script>
-  </body>
+
+    <script>
+        const myModal = new bootstrap.Modal("#exampleModal", {
+            keyboard: false
+        });
+        $(".btn-primary").on("click", () => {
+            myModal.show();
+        });
+    </script>
+    
+</body>
 </html>
