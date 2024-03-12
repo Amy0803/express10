@@ -22,15 +22,15 @@
 
 
 const express = require("express");
-const {resolve} = require("path");
+const path = require("path");
 
 // const __dirname = __dirname;
 
 const app = express();
-app.use(express.static(resolve(__dirname, "public")));
-app.use("/bootstrap", express.static(resolve(__dirname, "node_modules/bootstrap/dist")));
-app.use("/jquery", express.static(resolve(__dirname, "node_modules/jquery/dist")));
-app.use('/fontawesome', express.static(resolve(__dirname, 'node_modules/@fortawesome/fontawesome-free')));
+app.use(express.static(path.resolve(__dirname, "public")));
+app.use("/bootstrap", express.static(path.resolve(__dirname, "node_modules/bootstrap/dist")));
+app.use("/jquery", express.static(path.resolve(__dirname, "node_modules/jquery/dist")));
+app.use('/fontawesome', express.static(path.resolve(__dirname, 'node_modules/@fortawesome/fontawesome-free')));
 
 app.get("/", (req, res) => {
   res.send("網站首頁");
