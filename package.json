@@ -1,17 +1,16 @@
 {
-  "name": "express03",
+  "name": "express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "nodemon index.js",
+    "test": "nodemon index.mjs",
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "YiHsin Chen",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.3",
-    "moment": "^2.30.1"
+    "express": "^4.18.3"
   }
 }
