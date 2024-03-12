@@ -32,9 +32,9 @@ app.use("/bootstrap", express.static(path.resolve(__dirname, "node_modules/boots
 app.use("/jquery", express.static(path.resolve(__dirname, "node_modules/jquery/dist")));
 app.use('/fontawesome', express.static(path.resolve(__dirname, 'node_modules/@fortawesome/fontawesome-free')));
 
-app.get("/", (req, res) => {
-  res.send("網站首頁");
-});
+// app.get("/", (req, res) => {
+//   res.send("網站首頁");
+// });
 
 
 app.listen(3000, () => {
